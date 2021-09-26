@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Pascal VOC",
+            "type": "python",
+            "request": "launch",
+            "args": ["--data_dir","VOCdevkit", "--year","VOC2012","--output_path","tfrecord_2/pascal", "--num_images=1000", "--label_map_json_path","VOC_label.json"],
+            "program": "create_pascal_tfrecord.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
